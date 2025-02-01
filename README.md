@@ -1,14 +1,6 @@
 ```markdown
-# Spotify Data Engineering Pipeline
-![AWS](https://img.shields.io/badge/AWS-Cloud%20Pipeline-orange)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Spotify](https://img.shields.io/badge/Spotify-API-green)
-
 ## 🎯 Project Overview
 An enterprise-grade data engineering pipeline that leverages AWS serverless architecture to process Spotify playlist data. This production-ready solution demonstrates modern data engineering practices, cloud architecture patterns, and automated ETL workflows.
-
-## 🏗️ Architecture
-![Architecture Diagram](path_to_your_diagram)
 
 ### System Design Highlights
 - **Serverless Architecture**: Cost-effective, scalable implementation using AWS Lambda
