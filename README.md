@@ -73,9 +73,10 @@ git clone [repository-url]
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure credentials
+# Configure credentials (see Security section below)
 export SPOTIFY_CLIENT_ID="your_client_id"
 export SPOTIFY_CLIENT_SECRET="your_client_secret"
+export S3_BUCKET_NAME="your_s3_bucket_name"
 ```
 
 ### AWS Configuration
@@ -90,6 +91,36 @@ export SPOTIFY_CLIENT_SECRET="your_client_secret"
 - Near real-time data availability for analytics
 - Scalable solution handling millions of records
 - Cost-effective serverless architecture
+
+## 🔒 Security Best Practices
+
+### Environment Variables
+All sensitive configuration is handled through environment variables:
+
+```bash
+# Required variables
+SPOTIFY_CLIENT_ID=your_spotify_client_id
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+S3_BUCKET_NAME=your_s3_bucket_name
+
+# Optional variables
+SPOTIFY_PLAYLIST_URL=your_playlist_url
+AWS_REGION=us-east-1
+```
+
+### Security Checklist
+- ✅ No hardcoded credentials in code
+- ✅ Environment variables for all sensitive data
+- ✅ AWS IAM roles for Lambda functions
+- ✅ S3 bucket encryption enabled
+- ✅ VPC configuration for Lambda (if needed)
+- ✅ CloudWatch logging for monitoring
+
+### Getting Spotify API Credentials
+1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
+2. Create a new application
+3. Copy the Client ID and Client Secret
+4. Set them as environment variables
 
 ## 🔄 CI/CD Pipeline
 - Automated testing using pytest
@@ -109,5 +140,3 @@ export SPOTIFY_CLIENT_SECRET="your_client_secret"
 **Basanth Kumar Varaganti**  
 Data Engineer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](linkedin.com/in/basantth)
----

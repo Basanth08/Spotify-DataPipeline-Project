@@ -1,0 +1,14 @@
+# Spotify API Configuration
+# Get these from https://developer.spotify.com/dashboard
+SPOTIFY_CLIENT_ID=your_spotify_client_id_here
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret_here
+
+# Optional: Custom playlist URL (default will be used if not set)
+SPOTIFY_PLAYLIST_URL=https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF?si=1333723a6eff4b7f
+
+# AWS Configuration
+# Your S3 bucket name for storing data
+S3_BUCKET_NAME=your_s3_bucket_name_here
+
+# Optional: AWS region (defaults to us-east-1)
+AWS_REGION=us-east-1 
