@@ -59,33 +59,6 @@ Spotify API → AWS Lambda → S3 (Raw) → Lambda Transform → S3 (Processed) 
 | **LOAD** | **Data Catalog** | AWS Glue Data Catalog | Centralized metadata repository |
 | **LOAD** | **Analytics Engine** | Amazon Athena | Serverless SQL queries on S3 data |
 
-### **Data Flow Architecture**
-```mermaid
-graph LR
-    A[Spotify API] --> B[Python Script]
-    B --> C[CloudWatch Daily Trigger]
-    C --> D[Lambda Extract Function]
-    D --> E[S3 Raw Data Bucket]
-    E --> F[S3 Object Put Trigger]
-    F --> G[Lambda Transform Function]
-    G --> H[S3 Transformed Data Bucket]
-    H --> I[AWS Glue Crawler]
-    I --> J[AWS Glue Data Catalog]
-    J --> K[Amazon Athena Analytics]
-    
-    style A fill:#1DB954
-    style B fill:#3776AB
-    style C fill:#FF9900
-    style D fill:#FF9900
-    style E fill:#232F3E
-    style F fill:#FF9900
-    style G fill:#FF9900
-    style H fill:#232F3E
-    style I fill:#FF9900
-    style J fill:#FF9900
-    style K fill:#FF9900
-```
-
 ### **Infrastructure as Code**
 ```yaml
 # AWS CDK/CloudFormation Template Structure
