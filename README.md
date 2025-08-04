@@ -13,8 +13,6 @@
 - [🔒 Security & Compliance](#-security--compliance)
 - [📊 Monitoring & Observability](#-monitoring--observability)
 - [🔄 CI/CD Pipeline](#-cicd-pipeline)
-- [🎯 Future Roadmap](#-future-roadmap)
-- [👨‍💻 About the Developer](#-about-the-developer)
 
 ## 🚀 Executive Summary
 
